@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SafeDriver.PrivateSettings"
+             Title="隱私設定"
+             BackgroundColor="#FEFEFE">
+    
+    <VerticalStackLayout>
+        <Label Text="     " FontSize="Medium" />
+        <HorizontalStackLayout>
+            <Frame HeightRequest="65" WidthRequest="360" Margin="16,16,16,0" BackgroundColor="#E9ECF1"  >
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Label Text="   資料追蹤" VerticalOptions="Center"  Margin="0,-5,0,0" FontSize="Title" />
+                    <ImageButton Source="arrow.png" Margin="280,0,0,0" HeightRequest="20" WidthRequest="20" />
+                </Grid>
+            </Frame>
+        </HorizontalStackLayout>
+
+        <Label Text="  " FontSize="Small" />
+
+        <HorizontalStackLayout>
+            <Frame HeightRequest="65" WidthRequest="360" Margin="16,16,16,0" BackgroundColor="#E9ECF1"  >
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Label Text="   連接系統" VerticalOptions="Center" Margin="0,-5,0,0" FontSize="Title"/>
+                    <ImageButton Source="arrow.png" Margin="280,0,0,0" HeightRequest="20" WidthRequest="20" />
+                </Grid>
+            </Frame>
+        </HorizontalStackLayout>
+
+    </VerticalStackLayout>
+</ContentPage>

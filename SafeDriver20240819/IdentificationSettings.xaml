@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SafeDriver.IdentificationSettings"
+             Title="辨識系統"
+             BackgroundColor="#F5F5F5"
+             Padding="10">
+
+    <Shell.TitleView>
+        <Grid VerticalOptions="FillAndExpand" >
+            <Label Text="辨識系統"
+       FontSize="24"  
+       FontAttributes="Bold"
+       HorizontalOptions="Center"
+       VerticalOptions="Center"
+       Margin="-85,0,0,0"
+       Padding="0,10,0,0"
+       TextColor="Black" />
+        </Grid>
+    </Shell.TitleView>
+
+    <VerticalStackLayout >
+
+        <!-- 辨識系統區塊 -->
+        <Frame BackgroundColor="#E9ECF1"
+               CornerRadius="10"
+               Padding="16">
+            <HorizontalStackLayout Spacing="200" Padding="10,0">
+                <!-- 通知標籤 -->
+                <Label Text="開始辨識" 
+       FontAttributes="Bold"
+       FontSize="Large" 
+       VerticalOptions="Center" 
+       HorizontalOptions="StartAndExpand" />
+
+                <!-- 通知開關 -->
+                <Switch x:Name="recognitionSwitch"
+            IsToggled="false"
+            VerticalOptions="Center"
+            HorizontalOptions="End"
+            Toggled="OnRecognitionSwitchToggled" />
+
+            </HorizontalStackLayout>
+        </Frame>
+
+    </VerticalStackLayout>
+
+</ContentPage>

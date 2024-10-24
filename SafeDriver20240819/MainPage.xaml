@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SafeDriver.MainPage"
+             Title=""
+             Background="#FEFEFE"
+             >
+    <VerticalStackLayout Padding="0" Margin="0">
+        <!-- 標題部分 -->
+        <HorizontalStackLayout Margin="0,0,0,0">
+            <!-- 使用者頭像 -->
+            <ImageButton Source="profile.png" 
+                         HeightRequest="65" 
+                         WidthRequest="65" 
+                         Margin="115,40,0,0" 
+                         x:Name="ProfileImage" 
+                         Clicked="OnProfilesButtonClicked" />
+            <!-- 使用者暱稱 -->
+            <Label Text="Chiikawa" 
+                   TextColor="Black" 
+                   FontSize="28" 
+                   FontAttributes="Bold" 
+                   TextDecorations="Underline" 
+                   x:Name="NicknameLabel" 
+                   VerticalOptions="Center" 
+                   Margin="5,35,0,0" />
+            
+            <!--<ImageButton Source="settings.png" HeightRequest="75" WidthRequest="45" x:Name="SettingImageButton" Clicked="OnSettingsButtonClicked" Margin="123,0,0,0"/>-->
+        </HorizontalStackLayout>
+        
+        <!-- 日期選擇器 -->
+        <HorizontalStackLayout Margin="15,20,0,0">
+            <DatePicker x:Name="datePicker" FontSize="22" FontAttributes="Bold" HorizontalOptions="Center"
+                    VerticalOptions="Center" HeightRequest="60" WidthRequest="230" Margin="0,0,20,0" />
+            <Button Text="   顯示日期   " TextColor="White" FontSize="17" FontAttributes="Bold" BackgroundColor="#E6191970" CornerRadius="10" Clicked="OnButtonClicked" Margin="10,0,0,0" />
+        </HorizontalStackLayout>
+
+        <!-- 今日狀態區塊 -->
+        <HorizontalStackLayout Margin="-12,-12,0,0">
+            <Frame HeightRequest="150" WidthRequest="404" Margin="15,20,0,0" 
+           BackgroundColor="#E9ECF1" HorizontalOptions="FillAndExpand" Padding="0">
+                <Grid>
+                    <!-- 背景圖片 -->
+                    <Image Source="road3.png" Aspect="AspectFill" HorizontalOptions="Fill" VerticalOptions="Fill" Opacity="2.0"/>
+
+                    <!-- 透明遮罩 -->
+                    <!--BoxView Color="dimgray" Opacity="0" -->
+
+                    <!-- 前景文字 -->
+                    <Grid Padding="8">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Label Text="今日狀態" TextColor="White" FontSize="28" FontAttributes="Bold" Margin="0,5,0,0" >
+                            <Label.Shadow>
+                                <Shadow Brush="Black" Opacity="1.5" />
+                            </Label.Shadow>
+                        </Label>
+                        <Label Text="健康狀況優良，安心上路" Grid.Row="1" VerticalOptions="Center" Margin="0,10,0,0" 
+                       HorizontalOptions="Center" TextColor="White" FontSize="26" FontAttributes="Bold">
+                            <Label.Shadow>
+                            <Shadow Brush="Black" Opacity="1.5" />
+                            </Label.Shadow>
+                        </Label>
+
+                    </Grid>
+                </Grid>
+            </Frame>
+        </HorizontalStackLayout>
+
+        <!-- 睡眠分數區塊 -->
+        <HorizontalStackLayout Margin="-10,-12,8,0">
+            <Frame HeightRequest="150" WidthRequest="404" CornerRadius="15" Margin="13,20" Padding="0" BackgroundColor="#FFFFFF" HorizontalOptions="FillAndExpand">
+                <Grid>
+                    <Image Source="backg.png" Aspect="AspectFill" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" />
+                    <Label x:Name="OverallSleepScore" Text="80" FontSize="36" FontAttributes="Bold" 
+                   HorizontalOptions="End" VerticalOptions="Center" Margin="0,0,75,0" TextColor="Green" />
+                    <!-- 睡眠分數標題 -->
+                    <Label Text="睡眠分數" FontSize="32" FontAttributes="Bold" TextColor="White" 
+                   HorizontalOptions="Start" VerticalOptions="Center" Margin="40,8,0,0" />
+                </Grid>
+            </Frame>
+        </HorizontalStackLayout>
+
+        <!-- 睡眠品質與心率區塊 -->
+        <HorizontalStackLayout Margin="2,-16,8,0">
+            <Frame HeightRequest="120" WidthRequest="195" BackgroundColor="#E9ECF1" CornerRadius="15" Margin="4">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Label Text="睡眠品質" FontAttributes="Bold" FontSize="18" Margin="-1,-4,0,0"/>
+                    <Label x:Name="sleepquality" Text="良好" TextColor="DarkGreen" Grid.Row="1" FontSize="28" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="Center" Margin="2,3,0,0"/>
+                </Grid>
+            </Frame>
+            <Frame HeightRequest="120" WidthRequest="195" BackgroundColor="#E9ECF1" CornerRadius="15" Margin="4">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Label Text="心率" FontAttributes="Bold" FontSize="18" Margin="-1,-4,0,0" />
+                    <Label x:Name="AverageHeartRate" Text="83 bpm" TextColor="#2196F3" Grid.Row="1" FontSize="28" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="Center" Margin="2,0,0,0"/>
+                </Grid>
+            </Frame>
+        </HorizontalStackLayout>
+
+        <!-- 壓力等級區塊 -->
+        <HorizontalStackLayout Margin="6,0,8,0">
+
+            <Frame HeightRequest="150" WidthRequest="404" CornerRadius="15" Margin="-2,5" Padding="0" BackgroundColor="#FFFFFF" HorizontalOptions="FillAndExpand">
+                <Grid>
+                    <Image Source="p2.png" Aspect="AspectFill" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" />
+                    <Label x:Name="stresslevel" Text="低" FontSize="36" FontAttributes="Bold" 
+                   HorizontalOptions="End" VerticalOptions="Center" Margin="0,0,78,0" TextColor="Blue" />
+                    <!-- 壓力等級標題 -->
+                    <Label Text="壓力等級" FontSize="32" FontAttributes="Bold" TextColor="White" 
+                           HorizontalOptions="Start" VerticalOptions="Center" Margin="40,8,0,0" />
+                </Grid>
+            </Frame>
+        </HorizontalStackLayout>
+
+    </VerticalStackLayout>
+</ContentPage>

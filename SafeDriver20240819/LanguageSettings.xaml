@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SafeDriver.LanguageSettings"
+             Title="語言"
+             BackgroundColor="#F5F5F5"
+             Padding="10">
+
+    <Shell.TitleView>
+        <Grid VerticalOptions="StartAndExpand" Padding="0,5,0,0" >
+            <Label Text="語言設定"
+               FontSize="24"  
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               Margin="-80,0,0,0"
+               Padding="0,10,0,0"
+               TextColor="Black" />
+        </Grid>
+    </Shell.TitleView>
+
+    <VerticalStackLayout >
+
+        <!-- 標題 -->
+        <Label Text="選擇語言"
+          FontSize="30" Margin="16" FontAttributes="Bold" />
+
+        <!-- 語言選擇 -->
+        <Frame BackgroundColor="#E9ECF1" 
+           CornerRadius="12"
+           Padding="10"
+           HasShadow="True"
+           HorizontalOptions="FillAndExpand">
+
+            <HorizontalStackLayout Spacing="200" Padding="10,0">
+
+                <!-- 語言名稱 -->
+                <Label Text="繁體中文" 
+                    FontAttributes="Bold"
+                    FontSize="Large"  
+                    VerticalOptions="Center"
+                    HorizontalOptions="StartAndExpand" />
+
+                    <!-- 語言選擇 CheckBox -->
+                <CheckBox x:Name="LanguageCheckBox"
+                                VerticalOptions="Center"
+                                HorizontalOptions="End"
+                                Scale="1.5" 
+                              />
+                
+            </HorizontalStackLayout>
+        </Frame>
+
+    </VerticalStackLayout>
+</ContentPage>

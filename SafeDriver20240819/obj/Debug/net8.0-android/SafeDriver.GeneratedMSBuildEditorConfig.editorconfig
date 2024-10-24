@@ -1,0 +1,131 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = true
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0-android
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = SafeDriver
+build_property.ProjectDir = D:\SafeDriver20240819\SafeDriver20240819\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[D:/SafeDriver20240819/SafeDriver20240819/AccountSafetySettings.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SafeDriver.AccountSafetySettings.xaml
+build_metadata.AdditionalFiles.TargetPath = AccountSafetySettings.xaml
+build_metadata.AdditionalFiles.RelativePath = AccountSafetySettings.xaml
+
+[D:/SafeDriver20240819/SafeDriver20240819/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SafeDriver.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[D:/SafeDriver20240819/SafeDriver20240819/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SafeDriver.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[D:/SafeDriver20240819/SafeDriver20240819/ChooseImagePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SafeDriver.ChooseImagePage.xaml
+build_metadata.AdditionalFiles.TargetPath = ChooseImagePage.xaml
+build_metadata.AdditionalFiles.RelativePath = ChooseImagePage.xaml
+
+[D:/SafeDriver20240819/SafeDriver20240819/contactSettings.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SafeDriver.contactSettings.xaml
+build_metadata.AdditionalFiles.TargetPath = contactSettings.xaml
+build_metadata.AdditionalFiles.RelativePath = contactSettings.xaml
+
+[D:/SafeDriver20240819/SafeDriver20240819/FAQSettings.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SafeDriver.FAQSettings.xaml
+build_metadata.AdditionalFiles.TargetPath = FAQSettings.xaml
+build_metadata.AdditionalFiles.RelativePath = FAQSettings.xaml
+
+[D:/SafeDriver20240819/SafeDriver20240819/FeedBackSettings.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SafeDriver.FeedBackSettings.xaml
+build_metadata.AdditionalFiles.TargetPath = FeedBackSettings.xaml
+build_metadata.AdditionalFiles.RelativePath = FeedBackSettings.xaml
+
+[D:/SafeDriver20240819/SafeDriver20240819/FrameSection.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SafeDriver.FrameSection.xaml
+build_metadata.AdditionalFiles.TargetPath = FrameSection.xaml
+build_metadata.AdditionalFiles.RelativePath = FrameSection.xaml
+
+[D:/SafeDriver20240819/SafeDriver20240819/IdentificationSettings.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SafeDriver.IdentificationSettings.xaml
+build_metadata.AdditionalFiles.TargetPath = IdentificationSettings.xaml
+build_metadata.AdditionalFiles.RelativePath = IdentificationSettings.xaml
+
+[D:/SafeDriver20240819/SafeDriver20240819/LanguageSettings.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SafeDriver.LanguageSettings.xaml
+build_metadata.AdditionalFiles.TargetPath = LanguageSettings.xaml
+build_metadata.AdditionalFiles.RelativePath = LanguageSettings.xaml
+
+[D:/SafeDriver20240819/SafeDriver20240819/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SafeDriver.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[D:/SafeDriver20240819/SafeDriver20240819/NotificationSettings.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SafeDriver.NotificationSettings.xaml
+build_metadata.AdditionalFiles.TargetPath = NotificationSettings.xaml
+build_metadata.AdditionalFiles.RelativePath = NotificationSettings.xaml
+
+[D:/SafeDriver20240819/SafeDriver20240819/PrivateSettings.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SafeDriver.PrivateSettings.xaml
+build_metadata.AdditionalFiles.TargetPath = PrivateSettings.xaml
+build_metadata.AdditionalFiles.RelativePath = PrivateSettings.xaml
+
+[D:/SafeDriver20240819/SafeDriver20240819/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SafeDriver.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[D:/SafeDriver20240819/SafeDriver20240819/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SafeDriver.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[D:/SafeDriver20240819/SafeDriver20240819/Settings.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SafeDriver.Settings.xaml
+build_metadata.AdditionalFiles.TargetPath = Settings.xaml
+build_metadata.AdditionalFiles.RelativePath = Settings.xaml
+
+[D:/SafeDriver20240819/SafeDriver20240819/TabPageDevice.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SafeDriver.TabPageDevice.xaml
+build_metadata.AdditionalFiles.TargetPath = TabPageDevice.xaml
+build_metadata.AdditionalFiles.RelativePath = TabPageDevice.xaml
+
+[D:/SafeDriver20240819/SafeDriver20240819/TabPageNotification.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SafeDriver.TabPageNotification.xaml
+build_metadata.AdditionalFiles.TargetPath = TabPageNotification.xaml
+build_metadata.AdditionalFiles.RelativePath = TabPageNotification.xaml
+
+[D:/SafeDriver20240819/SafeDriver20240819/TabPageProfiles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SafeDriver.TabPageProfiles.xaml
+build_metadata.AdditionalFiles.TargetPath = TabPageProfiles.xaml
+build_metadata.AdditionalFiles.RelativePath = TabPageProfiles.xaml

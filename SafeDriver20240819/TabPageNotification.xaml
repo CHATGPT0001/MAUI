@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Name="Notification"
+             xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SafeDriver.TabPageNotification"
+             Title="通知"
+             BackgroundColor="#F5F5F5"  
+             Padding="5"
+             >
+
+    <Shell.TitleView>
+
+        <Label Text="疲勞通知"
+               FontSize="24"  
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               Margin="-20,0,0,0"
+               Padding="0,10,0,0"
+               TextColor="Black" />
+
+    </Shell.TitleView>
+
+    <VerticalStackLayout>
+
+        
+        <!-- 設定按鈕與間距 -->
+        <HorizontalStackLayout Margin="16,16,16,0">
+            <ImageButton Source="settings.png"
+                         HeightRequest="45"
+                         WidthRequest="45"
+                         x:Name="SettingImageButton"
+                         Clicked="OnSettingsButtonClicked" />
+            <Label Text=" " FontSize="18" VerticalOptions="Center" Margin="16,0,0,0" />
+        </HorizontalStackLayout>
+
+        <!-- 內容區域 -->
+        <StackLayout Padding="10">
+            <!-- ListView 用於顯示讀取的檔案內容 -->
+            <ListView x:Name="fileContentListView" />
+        </StackLayout>
+
+        <!-- 標註的 Frame 示例：可根據需求解除註解使用 -->
+        <!--
+        <Frame HeightRequest="93" WidthRequest="363" Margin="16,16,16,0" BackgroundColor="#E9ECF1">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Label Text="行車警告"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center"
+                       FontAttributes="Bold" />
+            </Grid>
+        </Frame>
+        -->
+
+    </VerticalStackLayout>
+</ContentPage>

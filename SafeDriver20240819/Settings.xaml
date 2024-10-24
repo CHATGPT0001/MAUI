@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:controls="clr-namespace:SafeDriver.Controls"  
+             x:Class="SafeDriver.Settings"
+             Title="設定"
+             BackgroundColor="#F5F5F5"
+             Padding="5">
+
+    <Shell.TitleView>
+        <Grid VerticalOptions="FillAndExpand" >
+            <Label Text="設定"
+               FontSize="24"  
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               Margin="-85,0,0,0"
+               Padding="0,10,0,0"
+               TextColor="Black" />
+        </Grid>
+    </Shell.TitleView>
+
+    <VerticalStackLayout Padding="16" Spacing="10">
+
+        <!-- 功能列表 -->
+        <controls:FrameSection Title="辨識系統" Command="{Binding IdentificationCommand}" />
+        <controls:FrameSection Title="帳號安全" Command="{Binding AccountSafetyCommand}" />
+        <controls:FrameSection Title="語言" Command="{Binding LanguageCommand}" />
+        <controls:FrameSection Title="FAQ" Command="{Binding FAQCommand}" />
+        <controls:FrameSection Title="意見回饋" Command="{Binding FeedbackCommand}" />
+        <controls:FrameSection Title="聯絡我們" Command="{Binding ConnectionCommand}" />
+
+    </VerticalStackLayout>
+</ContentPage>

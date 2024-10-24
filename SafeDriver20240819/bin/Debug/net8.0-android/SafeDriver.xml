@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SafeDriver</name>
+    </assembly>
+    <members>
+        <member name="P:SafeDriver.MainPage.GarminData.Date">
+            <summary>
+            日期
+            </summary>
+        </member>
+        <member name="P:SafeDriver.MainPage.GarminData.OverallSleepScore">
+            <summary>
+            睡眠分數
+            </summary>
+        </member>
+        <member name="P:SafeDriver.MainPage.GarminData.SleepQuality">
+            <summary>
+            睡眠品質
+            </summary>
+        </member>
+        <member name="P:SafeDriver.MainPage.GarminData.AverageStressLevel">
+            <summary>
+            壓力分數
+            </summary>
+        </member>
+        <member name="P:SafeDriver.MainPage.GarminData.StressLevel">
+            <summary>
+            壓力等級
+            </summary>
+        </member>
+        <member name="P:SafeDriver.MainPage.GarminData.MinHeartRate">
+            <summary>
+            最小心率
+            </summary>
+        </member>
+        <member name="P:SafeDriver.MainPage.GarminData.MaxHeartRate">
+            <summary>
+            最大心率
+            </summary>
+        </member>
+        <member name="P:SafeDriver.MainPage.GarminData.AverageHeartRate">
+            <summary>
+            平均心率
+            </summary>
+        </member>
+    </members>
+</doc>

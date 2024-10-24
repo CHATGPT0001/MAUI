@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SafeDriver.TabPageDevice"
+             Title="裝置"
+             BackgroundColor="#F5F5F5"  
+             Padding="5"
+             >
+
+    <Shell.TitleView>
+
+        <Label Text="裝置"
+               FontSize="24"  
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               Margin="-20,0,0,0"
+               Padding="0,10,0,0"
+               TextColor="Black" />
+
+    </Shell.TitleView>
+    
+    <VerticalStackLayout Spacing="20">
+
+        <!-- 移除裝置按鈕 -->
+        <HorizontalStackLayout Margin="16,16,16,0">
+            <Button Text="移除裝置"
+                    FontSize="17"
+                    FontAttributes="Bold"
+                    BackgroundColor="DarkRed"
+                    TextColor="White"
+                    CornerRadius="10"
+                    HorizontalOptions="Start"
+                    Clicked="OnRemoveDeviceButtonClicked" />
+        </HorizontalStackLayout>
+
+        <!-- 裝置顯示區 -->
+        <Frame x:Name="DeviceFrame"
+               HeightRequest="150"
+               WidthRequest="363"
+               Margin="16,0,16,30"
+               BackgroundColor="#E9ECF1"
+               BorderColor="#FEFEFE"
+               CornerRadius="12"
+               HasShadow="True"
+               IsVisible="True">
+            <Grid ColumnSpacing="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Image Source="watch.png"
+                       BackgroundColor="#E9ECF1"
+                       HeightRequest="100"
+                       WidthRequest="100"
+                       Aspect="AspectFill"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Start" />
+
+                <Label Text="vivosmart 5"
+                       FontSize="22"
+                       FontAttributes="Bold"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Start"
+                       Grid.Column="1"
+                       Margin="10,0,0,0" />
+            </Grid>
+        </Frame>
+
+        <!-- 無裝置連接文字 -->
+        <Label x:Name="NoDeviceLabel"
+               Text="無裝置連接"
+               FontSize="22"
+               FontAttributes="Bold"
+               TextColor="Gray"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               IsVisible="False" />
+
+        <!-- 新增裝置按鈕 -->
+        <Button Text="新增裝置"
+                HeightRequest="50"
+                WidthRequest="150"
+                FontSize="17"
+                FontAttributes="Bold"
+                BackgroundColor="#E6191970"
+                TextColor="White"
+                CornerRadius="10"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Clicked="OnAddDeviceButtonClicked" />
+
+        <!-- 手錶選擇區塊 -->
+        <Frame x:Name="DeviceSelectionPopup"
+               HeightRequest="250"
+               WidthRequest="300"
+               BackgroundColor="#FFFFFF"
+               CornerRadius="15"
+               Padding="20"
+               IsVisible="False"
+               VerticalOptions="Center"
+               HorizontalOptions="Center">
+            <VerticalStackLayout Spacing="15">
+                <Label Text="選擇裝置"
+                       FontSize="24"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center" />
+                
+                <HorizontalStackLayout HorizontalOptions="Center">
+                    
+                    <ImageButton Source="watch.png"
+                             HeightRequest="100"
+                             WidthRequest="100"
+                             Clicked="OnWatchSelected" />
+
+                    <Label Text="vivosmart 5"
+                           FontSize="22"
+                           FontAttributes="Bold"
+                           VerticalOptions="Center"
+                           Margin="10,0,0,0" />
+                </HorizontalStackLayout>
+                
+                <Button Text="取消"
+                        BackgroundColor="#E6191970"
+                        TextColor="White"
+                        CornerRadius="10"
+                        Clicked="OnCancelSelection" />
+            </VerticalStackLayout>
+        </Frame>
+
+    </VerticalStackLayout>
+</ContentPage>

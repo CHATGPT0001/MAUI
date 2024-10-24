@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SafeDriver.ChooseImagePage"
+             Title="選擇頭像"
+             BackgroundColor="White"
+             Padding="10">
+    <VerticalStackLayout Spacing="15" HorizontalOptions="Center" VerticalOptions="Center">
+        <Label Text="選擇您的頭像" FontSize="24" FontAttributes="Bold" 
+               HorizontalOptions="Center" />
+
+        <!-- 圖像選項 -->
+        <HorizontalStackLayout Spacing="15"
+                       Padding="10"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center">
+            <ImageButton Source="mouse.png"
+                 HeightRequest="80"
+                 WidthRequest="80"
+                 Aspect="AspectFill"
+                 CornerRadius="40"
+                 Clicked="OnImageSelected" />
+            <ImageButton Source="cat.png"
+                 HeightRequest="80"
+                 WidthRequest="80"
+                 Aspect="AspectFill"
+                 CornerRadius="40"
+                 Clicked="OnImageSelected" />
+            <ImageButton Source="cat2.png"
+                 HeightRequest="80"
+                 WidthRequest="80"
+                 Aspect="AspectFill"
+                 CornerRadius="40"
+                 Clicked="OnImageSelected" />
+            <ImageButton Source="profile.png"
+                 HeightRequest="80"
+                 WidthRequest="80"
+                 Aspect="AspectFill"
+                 CornerRadius="40"
+                 Clicked="OnImageSelected" />
+        </HorizontalStackLayout>
+
+        <!-- 取消按鈕 -->
+        <Button Text="取消" HeightRequest="50" WidthRequest="120" 
+                BackgroundColor="#FF4444" TextColor="White" CornerRadius="25" 
+                HorizontalOptions="Center" Clicked="OnCancelClicked"/>
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SafeDriver.Controls.FrameSection">
+
+    <Frame HeightRequest="65" Margin="0,5" BackgroundColor="#E9ECF1"
+           CornerRadius="10" HasShadow="False" Padding="10">
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <!-- 標題 Label -->
+            <Label x:Name="TitleLabel" FontSize="Large" VerticalOptions="Center" FontAttributes="Bold"/>
+
+            <!-- 向右箭頭按鈕 -->
+            <ImageButton Source="arrow.png" Grid.Column="1"
+                         HeightRequest="26" WidthRequest="26"
+                         Clicked="OnFrameSectionClicked" />
+        </Grid>
+    </Frame>
+</ContentView>

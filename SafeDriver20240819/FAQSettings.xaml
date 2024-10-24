@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SafeDriver.FAQSettings"
+             Title="FAQ"
+             BackgroundColor="#F5F5F5"
+             Padding="10">
+
+    <Shell.TitleView>
+        <Grid VerticalOptions="StartAndExpand" Padding="0,5,0,0" >
+            <Label Text="FAQ"
+                   FontSize="24"  
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   Margin="-80,0,0,0"
+                   Padding="0,10,0,0"
+                   TextColor="Black" />
+        </Grid>
+    </Shell.TitleView>
+
+    <VerticalStackLayout>
+        
+        <Label Text="常見問題" FontSize="30" Margin="16" FontAttributes="Bold"/>
+
+        <!-- 問題 1 -->
+        <Frame BackgroundColor="#E9ECF1"
+               CornerRadius="12"
+               Padding="15"
+               HasShadow="True">
+            <VerticalStackLayout Spacing="5">
+                <Label Text="無法登入裝置"
+                       FontSize="Medium"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Start" />
+
+                <Label Text="請檢查您的裝置是否連接網路，並確認帳戶資料正確。若仍無法登入，請致電客服：02-12345678"
+                       FontSize="Small"
+                       HorizontalOptions="Start" />
+            </VerticalStackLayout>
+        </Frame>
+
+        <Label HeightRequest="15" />
+
+        <!-- 問題 2 -->
+        <Frame BackgroundColor="#E9ECF1"
+               CornerRadius="12"
+               Padding="15"
+               HasShadow="True">
+            <VerticalStackLayout Spacing="5">
+                <Label Text="無法登入"
+                       FontSize="Medium"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Start" />
+
+                <Label Text="請確認您輸入的帳號和密碼是否正確。若您忘記密碼，可以使用『忘記密碼』功能來重設。"
+                       FontSize="Small"
+                       HorizontalOptions="Start" />
+            </VerticalStackLayout>
+        </Frame>
+
+        <Label HeightRequest="15" />
+        
+        <!-- 問題 3 -->
+        <Frame BackgroundColor="#E9ECF1"
+               CornerRadius="12"
+               Padding="15"
+               HasShadow="True">
+            <VerticalStackLayout Spacing="5">
+                <Label Text="如何重置密碼？"
+                       FontSize="Medium"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Start" />
+
+                <Label Text="如需重置密碼，請透過客服信箱或電話聯繫我們的客服團隊。    "
+                       FontSize="Small"
+                       HorizontalOptions="Start" />
+            </VerticalStackLayout>
+        </Frame>
+
+        <Label HeightRequest="15" />
+        
+        <!-- 問題 4 -->
+        <Frame BackgroundColor="#E9ECF1"
+               CornerRadius="12"
+               Padding="15"
+               HasShadow="True">
+            <VerticalStackLayout Spacing="5">
+                <Label Text="如何更新應用程式？"
+                       FontSize="Medium"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Start" />
+
+                <Label Text="請到應用程式商店（Google Play）檢查是否有最新版本可供更新。"
+                       FontSize="Small"
+                       HorizontalOptions="Start" />
+            </VerticalStackLayout>
+        </Frame>
+
+        <Label HeightRequest="15" />
+        
+        <!-- 問題 5 -->
+        <Frame BackgroundColor="#E9ECF1"
+               CornerRadius="12"
+               Padding="15"
+               HasShadow="True">
+            <VerticalStackLayout Spacing="5">
+                <Label Text="如何聯絡客服？"
+                       FontSize="Medium"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Start" />
+
+                <Label Text="如需協助，您可以使用「意見回饋」或透過電子郵件和電話聯繫我們。"
+                       FontSize="Small"
+                       HorizontalOptions="Start" />
+            </VerticalStackLayout>
+        </Frame>
+
+    </VerticalStackLayout>
+</ContentPage>

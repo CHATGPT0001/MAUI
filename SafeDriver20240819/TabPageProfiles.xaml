@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SafeDriver.TabPageProfiles"
+             Title="我的資料"
+             BackgroundColor="#F5F5F5"
+             Padding="5"
+             >
+
+    <Shell.TitleView>
+        <Grid VerticalOptions="FillAndExpand" >
+        <Label Text="我的資料"
+                   FontSize="24"  
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   Margin="-20,0,0,0"
+                   Padding="0,10,0,0"
+                   TextColor="Black" />
+        </Grid>
+    </Shell.TitleView>
+
+    <VerticalStackLayout >
+
+        <!-- 設定按鈕 -->
+        <HorizontalStackLayout Margin="16,16,16,10" >
+            <ImageButton Source="settings.png" HeightRequest="45" WidthRequest="45" 
+                         Clicked="OnSettingsButtonClicked"/>
+        </HorizontalStackLayout>
+        <!-- 頭像 -->
+        <VerticalStackLayout Spacing="20" HorizontalOptions="Center" VerticalOptions="Center" Margin="0,0,0,20">
+            <!-- 頭像圖片 -->
+            <Image x:Name="ProfileImage" Source="profile.png" Aspect="AspectFill"
+           HeightRequest="130" WidthRequest="130" 
+           HorizontalOptions="Center" VerticalOptions="Center"/>
+
+            <!-- 更換頭像按鈕 -->
+            <Button Text="更換頭像" HeightRequest="50" WidthRequest="100" 
+                    TextColor="White" FontSize="17" FontAttributes="Bold" BackgroundColor="#E6191970"
+            CornerRadius="20" HorizontalOptions="Center" VerticalOptions="Center"
+            Clicked="OnChangeProfileImage"/>
+        </VerticalStackLayout>
+
+        <!-- 修改暱稱 -->
+        <VerticalStackLayout Margin="0,0,0,10" >
+        <Frame BackgroundColor="#E9ECF1" HeightRequest="70" >
+            <Grid>
+                    <Label Text="暱稱" VerticalOptions="Center" FontSize="22" FontAttributes="Bold"/>
+                    <Label x:Name="NicknameLabel" Text="Chiikawa" FontSize="17" FontAttributes="Bold" 
+                       VerticalOptions="Center" HorizontalOptions="Center"/>
+                <ImageButton Source="arrow.png" 
+                             HorizontalOptions="End"
+                             Clicked="OnArrowNameImageButtonClicked"/>
+            </Grid>
+        </Frame>
+        </VerticalStackLayout>
+        
+        <!-- 修改年齡 -->
+        <VerticalStackLayout Margin="0,0,0,10">
+        <Frame BackgroundColor="#E9ECF1" HeightRequest="70">
+            <Grid>
+                    <Label Text="年齡" VerticalOptions="Center" FontSize="22" FontAttributes="Bold"/>
+                    <Label x:Name="AgeLabel" Text="21 歲" FontSize="17" FontAttributes="Bold"
+                       VerticalOptions="Center" HorizontalOptions="Center"/>
+                <ImageButton Source="arrow.png" 
+                             HorizontalOptions="End"
+                             Clicked="OnArrowAgeImageButtonClicked"/>
+            </Grid>
+        </Frame>
+        </VerticalStackLayout>
+        
+        <!-- 修改性別 -->
+        <VerticalStackLayout Margin="0,0,0,10">
+        <Frame BackgroundColor="#E9ECF1" HeightRequest="70">
+            <Grid>
+                    <Label Text="性別" VerticalOptions="Center" FontSize="22" FontAttributes="Bold"/>
+                    <Label x:Name="GenderLabel" Text="男性" FontSize="17" FontAttributes="Bold"
+                       VerticalOptions="Center" HorizontalOptions="Center"/>
+                <ImageButton Source="arrow.png"
+                             HorizontalOptions="End"
+                             Clicked="OnArrowGenderImageButtonClicked"/>
+            </Grid>
+        </Frame>
+    </VerticalStackLayout>
+
+
+    <!-- 修改身高 -->
+        <VerticalStackLayout Margin="0,0,0,10">
+        <Frame BackgroundColor="#E9ECF1" HeightRequest="70">
+            <Grid>
+                    <Label Text="身高" VerticalOptions="Center" FontSize="22" FontAttributes="Bold"/>
+                    <Label x:Name="HeightLabel" Text="172 cm" FontSize="17" FontAttributes="Bold"
+                       VerticalOptions="Center" HorizontalOptions="Center"/>
+                <ImageButton Source="arrow.png" 
+                             HorizontalOptions="End"
+                             Clicked="OnArrowHeightImageButtonClicked" />
+            </Grid>
+        </Frame>
+        </VerticalStackLayout>
+        
+        <!-- 修改體重 -->
+        <VerticalStackLayout Margin="0,0,0,10">
+        <Frame BackgroundColor="#E9ECF1" HeightRequest="70">
+            <Grid>
+                    <Label Text="體重" VerticalOptions="Center" FontSize="22" FontAttributes="Bold"/>
+                    <Label x:Name="WeightLabel" Text="74 kg" FontSize="17" FontAttributes="Bold"
+                   VerticalOptions="Center" HorizontalOptions="Center"/>
+                <ImageButton Source="arrow.png" 
+                             HorizontalOptions="End"
+                         Clicked="OnArrowWeightImageButtonClicked"/>
+            </Grid>
+        </Frame>
+        </VerticalStackLayout>
+
+    </VerticalStackLayout>
+</ContentPage>

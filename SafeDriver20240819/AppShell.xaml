@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="SafeDriver.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:SafeDriver"
+    Shell.FlyoutBehavior="Disabled"
+    Title="SafeDriver">
+
+    
+    <TabBar x:Name="tbBar">
+        <ShellContent Title="Home" Icon="dotnet_bot.png" Route="MainPage" ContentTemplate="{DataTemplate local:MainPage}"  />
+        <ShellContent Title="Device" Icon="dotnet_bot.png" Route="Device" ContentTemplate="{DataTemplate local:TabPageDevice}"  />
+        <ShellContent Title="Notification" Icon="dotnet_bot.png" Route="Notification" ContentTemplate="{DataTemplate local:TabPageNotification}" />
+        <ShellContent Title="Profile" Icon="dotnet_bot.png" Route="Profiles" ContentTemplate="{DataTemplate local:TabPageProfiles}" />
+    </TabBar>
+
+    
+
+    <!--<TabBar x:Name="tbBar">
+        <Tab Route="home" x:Name="tbMainPage" Title="首頁" Icon="dotnet_bot.png">
+            <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
+        </Tab>
+        <Tab Route="device" x:Name="tbDevice" Title="裝置" Icon="dotnet_bot.png">
+            <ShellContent ContentTemplate="{DataTemplate local:TabPageDevice}" />
+        </Tab>
+        <Tab Route="notification" x:Name="tbNotification" Title="通知" Icon="dotnet_bot.png">
+            <ShellContent ContentTemplate="{DataTemplate local:TabPageNotification}" />
+        </Tab>
+        <Tab Route="profiles" x:Name="tbProfile" Title="我的" Icon="dotnet_bot.png">
+            <ShellContent ContentTemplate="{DataTemplate local:TabPageProfiles}" />
+        </Tab>
+    </TabBar>-->
+
+</Shell>
