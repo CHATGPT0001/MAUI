@@ -39,7 +39,8 @@ public partial class IdentificationSettings : ContentPage
             string base64String = Convert.ToBase64String(Encoding.UTF8.GetBytes(jsonString));
 
             // 定義 URL
-            string url = $"http://163.14.48.65/DrowsyDrivingService/DDService.ashx?Action={base64String}";//改IP
+            MainPage mainpage =new MainPage();
+            string url = mainpage.URL+$"{base64String}";//改IP
 
             //Console.WriteLine(base64String);
 
@@ -99,7 +100,8 @@ public partial class IdentificationSettings : ContentPage
             string base64String = Convert.ToBase64String(Encoding.UTF8.GetBytes(jsonString));
 
             // 定義 URL
-            string url = $"http://163.14.48.65/DrowsyDrivingService/DDService.ashx?Action={base64String}";//改IP
+            MainPage mainpage = new MainPage(); 
+            string url = mainpage.URL+$"{base64String}";//改IP
 
             //Console.WriteLine(base64String);
 

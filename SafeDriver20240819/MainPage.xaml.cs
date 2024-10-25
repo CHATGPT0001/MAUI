@@ -15,7 +15,7 @@ namespace SafeDriver
 {
     public partial class MainPage : ContentPage
     {
-
+        public string URL = "http://172.20.10.2/DrowsyDrivingService/DDService.ashx?Action=";
         private System.Timers.Timer _timer; // 宣告 Timer 實例
         TabPageNotification tabPageNotification = new TabPageNotification();
         public Dictionary<string, string> alertmsg;
@@ -178,7 +178,7 @@ namespace SafeDriver
             // 判斷邏輯，假設當眨眼次數過高或打哈欠次數過高時，觸發通知
             //detectData.YawnTimesPerMinutes = 5;////////測試///////
             detectData.BlinkTimesPerMinutes = 25;////////測試///////
-            if (detectData.BlinkTimesPerMinutes > 20 || detectData.YawnTimesPerMinutes > 2) // totalyawntimes應該改成yawntimeperminute
+            if (detectData.BlinkTimesPerMinutes > 20 || detectData.YawnTimesPerMinutes >= 2) // totalyawntimes應該改成yawntimeperminute
             {
                 // 使用 MediaPlayer 播放音效
                 //var player = MediaPlayer.Create(Android.App.Application.Context, Resource.Raw.alert_sound); // 'alert_sound' 是您的音效檔名，無需副檔名
@@ -272,7 +272,7 @@ namespace SafeDriver
             string base64String = Convert.ToBase64String(System.Text.Encoding.UTF8.GetBytes(jsonString));
             string urlSafeBase64String = Uri.EscapeDataString(base64String);
             //定義url
-            string url = $"http://163.14.48.65/DrowsyDrivingService/DDService.ashx?Action={urlSafeBase64String}";
+            string url = URL+$"{urlSafeBase64String}";
 
             using (HttpClient client = new HttpClient())
             {
