@@ -52,8 +52,7 @@ public partial class TabPageNotification : ContentPage
         string jsonString = JsonConvert.SerializeObject(jsonObj);
         string base64String = Convert.ToBase64String(Encoding.UTF8.GetBytes(jsonString));
         string urlSafeBase64String = Uri.EscapeDataString(base64String);
-        MainPage mainpage = new MainPage(); 
-        string url = mainpage.URL+$"{urlSafeBase64String}";
+        string url = MainPage.URL+$"{urlSafeBase64String}";
 
         using (HttpClient client = new HttpClient())
         {

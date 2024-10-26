@@ -15,15 +15,20 @@ namespace SafeDriver
 {
     public partial class MainPage : ContentPage
     {
-        public string URL = "http://172.20.10.2/DrowsyDrivingService/DDService.ashx?Action=";
+        public static string serverTempText = "";
+        public static string URL = "http://172.20.10.2/DrowsyDrivingService/DDService.ashx?Action=";
         private System.Timers.Timer _timer; // 宣告 Timer 實例
         TabPageNotification tabPageNotification = new TabPageNotification();
         public Dictionary<string, string> alertmsg;
         private DateTime _lastAlertTime; // 保存最後一次發送通知的時間
+        static string lastMinute = "0";
+        static bool IsStartFlag = false;
+        static bool OneTime = false;
 
         public MainPage()
         {
             InitializeComponent();
+            ReadUrlFromSeverFileAsync();
             alertmsg = new Dictionary<string, string>();
             _lastAlertTime = DateTime.MinValue; // 初始化為一個遠古時間
 
@@ -63,6 +68,25 @@ namespace SafeDriver
             catch (Exception ex)
             {
                 DisplayAlert("錯誤", $"載入資料時發生錯誤：{ex.Message}", "確定");
+            }
+        }
+
+        public async Task ReadUrlFromSeverFileAsync()
+        {
+            string severFilePath = Path.Combine(FileSystem.AppDataDirectory, "Sever.txt");
+
+            if (File.Exists(severFilePath))
+            {
+                // 如果 Sever.txt 存在，讀取內容
+                string serverAddress = await File.ReadAllTextAsync(severFilePath);
+
+                // 設定 MainPage 裡的 URL
+                URL = $"http://{serverAddress}/DrowsyDrivingService/DDService.ashx?Action=";
+
+                serverTempText = serverAddress;
+
+                if (OneTime == false)
+                    SetDetectData(false);
             }
         }
 
@@ -302,6 +326,72 @@ namespace SafeDriver
                 {
                     Console.WriteLine($"Request error: {ex.Message}");
                 }
+            }
+
+            
+        }
+        private async Task SetDetectData(bool isActive)
+        {
+            try
+            {
+                if (URL == "")
+                    return;
+
+                OneTime = true;
+                var handler = new HttpClientHandler()
+                {
+                    ServerCertificateCustomValidationCallback = (sender, cert, chain, sslPolicyErrors) => { return true; }
+                };
+
+                // 定義 JSON 物件
+                var jsonObj = new
+                {
+                    MethodName = "SetDetectFlag",
+                    DetectFlag = isActive// e.Value.ToString()
+                };
+
+                // 將 JSON 物件序列化為字串
+                string jsonString = Newtonsoft.Json.JsonConvert.SerializeObject(jsonObj);
+
+                // 將 JSON 字串轉換為 Base64 字串
+                string base64String = Convert.ToBase64String(System.Text.Encoding.UTF8.GetBytes(jsonString));
+
+                // 定義 URL
+                string url = URL + $"{base64String}";//改IP
+
+                //Console.WriteLine(base64String);
+
+                // 使用 HttpClient 發送 HTTP GET 請求 
+                using (HttpClient client = new HttpClient())
+                {
+                    HttpResponseMessage response = await client.GetAsync(url);
+                    response.EnsureSuccessStatusCode(); // 確保請求成功
+                    if (response.IsSuccessStatusCode)
+                    {
+                        // 取得回應內容
+                        string responseContent = await response.Content.ReadAsStringAsync();
+
+                        AppState.IsRecognitionSwitchOn = isActive;// e.Value; // 設置全域變數
+                                                                  // 處理成功
+                                                                  //await DisplayAlert("Success", $"Detection flag set to {e.Value.ToString().ToUpper()}.", "OK");
+                    }
+                    else
+                    {
+                        // 處理失敗
+                        string errorContent = await response.Content.ReadAsStringAsync();
+                        await DisplayAlert("Error", $"Failed to set detection flag. Server response: {errorContent}", "OK");
+                    }
+                }
+            }
+            catch (HttpRequestException httpEx)
+            {
+                // 處理 HTTP 請求錯誤
+                await DisplayAlert("Error", $"HTTP Request error: {httpEx.Message}. Please check your network connection.", "OK");
+            }
+            catch (Exception ex)
+            {
+                // 處理其他錯誤
+                await DisplayAlert("Error", $"An unexpected error occurred: {ex.Message}", "OK");
             }
         }
     }

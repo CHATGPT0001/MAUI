@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SafeDriver.AccountSafetySettings"
-             Title="帳戶安全"
+             Title="服務器設定"
              BackgroundColor="#F5F5F5"
              Padding="10">
 
@@ -29,30 +29,22 @@
                CornerRadius="10"
                Padding="16">
             <VerticalStackLayout Spacing="5">
-                <Label Text="帳號 (Garmin)"
+                <Label Text="設置"
                        FontSize="Large"
                        FontAttributes="Bold"
                        HorizontalOptions="Start" />
-                <Label Text="A123456789@gmail.com"
-                       FontSize="Large"
-                       HorizontalOptions="Start" />
+                <Entry x:Name="SeverPlace" 
+                       Placeholder=""/>
             </VerticalStackLayout>
         </Frame>
         <Label HeightRequest="15" />
-        <!-- 密碼區塊 -->
-        <Frame BackgroundColor="#E9ECF1"
-               CornerRadius="10"
-               Padding="16">
-            <VerticalStackLayout Spacing="5">
-                <Label Text="密碼"
-                       FontSize="Large"
-                       FontAttributes="Bold"
-                       HorizontalOptions="Start" />
-                <Label Text="**********"
-                       FontSize="Large"
-                       HorizontalOptions="Start" />
-            </VerticalStackLayout>
-        </Frame>
+
+        <StackLayout Padding="20">
+            <!-- Button -->
+            <Button Text="確定" 
+                    Clicked="OnButtonClicked"
+                    BackgroundColor="#E6191970"/>
+        </StackLayout>
 
     </VerticalStackLayout>
 

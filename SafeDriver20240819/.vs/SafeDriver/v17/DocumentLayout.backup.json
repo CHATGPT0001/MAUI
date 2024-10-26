@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\SafeDriver20240819\\SafeDriver20240819\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{FB885DBA-AF50-41BB-83B5-1200860D95C7}|SafeDriver.csproj|d:\\safedriver20240819\\safedriver20240819\\tabpagenotification.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB885DBA-AF50-41BB-83B5-1200860D95C7}|SafeDriver.csproj|solutionrelative:tabpagenotification.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FB885DBA-AF50-41BB-83B5-1200860D95C7}|SafeDriver.csproj|d:\\safedriver20240819\\safedriver20240819\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FB885DBA-AF50-41BB-83B5-1200860D95C7}|SafeDriver.csproj|solutionrelative:mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,12 +15,24 @@
       "RelativeMoniker": "D:0:0:{FB885DBA-AF50-41BB-83B5-1200860D95C7}|SafeDriver.csproj|solutionrelative:identificationsettings.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FB885DBA-AF50-41BB-83B5-1200860D95C7}|SafeDriver.csproj|d:\\safedriver20240819\\safedriver20240819\\tabpagenotification.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB885DBA-AF50-41BB-83B5-1200860D95C7}|SafeDriver.csproj|solutionrelative:tabpagenotification.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FB885DBA-AF50-41BB-83B5-1200860D95C7}|SafeDriver.csproj|d:\\safedriver20240819\\safedriver20240819\\accountsafetysettings.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB885DBA-AF50-41BB-83B5-1200860D95C7}|SafeDriver.csproj|solutionrelative:accountsafetysettings.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FB885DBA-AF50-41BB-83B5-1200860D95C7}|SafeDriver.csproj|d:\\safedriver20240819\\safedriver20240819\\settings.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{FB885DBA-AF50-41BB-83B5-1200860D95C7}|SafeDriver.csproj|solutionrelative:settings.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{FB885DBA-AF50-41BB-83B5-1200860D95C7}|SafeDriver.csproj|d:\\safedriver20240819\\safedriver20240819\\accountsafetysettings.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{FB885DBA-AF50-41BB-83B5-1200860D95C7}|SafeDriver.csproj|solutionrelative:accountsafetysettings.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB885DBA-AF50-41BB-83B5-1200860D95C7}|SafeDriver.csproj|d:\\safedriver20240819\\safedriver20240819\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{FB885DBA-AF50-41BB-83B5-1200860D95C7}|SafeDriver.csproj|solutionrelative:mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB885DBA-AF50-41BB-83B5-1200860D95C7}|SafeDriver.csproj|d:\\safedriver20240819\\safedriver20240819\\tabpagedevice.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{FB885DBA-AF50-41BB-83B5-1200860D95C7}|SafeDriver.csproj|solutionrelative:tabpagedevice.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB885DBA-AF50-41BB-83B5-1200860D95C7}|SafeDriver.csproj|d:\\safedriver20240819\\safedriver20240819\\framesection.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{FB885DBA-AF50-41BB-83B5-1200860D95C7}|SafeDriver.csproj|solutionrelative:framesection.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FB885DBA-AF50-41BB-83B5-1200860D95C7}|SafeDriver.csproj|d:\\safedriver20240819\\safedriver20240819\\settings.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -57,7 +73,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 34,
+          "SelectedChildIndex": 35,
           "Children": [
             {
               "$type": "Bookmark",
@@ -185,124 +201,176 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Settings.xaml",
-              "DocumentMoniker": "D:\\SafeDriver20240819\\SafeDriver20240819\\Settings.xaml",
-              "RelativeDocumentMoniker": "Settings.xaml",
-              "ToolTip": "D:\\SafeDriver20240819\\SafeDriver20240819\\Settings.xaml",
-              "RelativeToolTip": "Settings.xaml",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAACEAAAAOAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "D:\\SafeDriver20240819\\SafeDriver20240819\\MainPage.xaml",
+              "RelativeDocumentMoniker": "MainPage.xaml",
+              "ToolTip": "D:\\SafeDriver20240819\\SafeDriver20240819\\MainPage.xaml",
+              "RelativeToolTip": "MainPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-10-24T03:01:22.188Z",
+              "WhenOpened": "2024-10-26T04:00:43.839Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AccountSafetySettings.xaml",
+              "DocumentMoniker": "D:\\SafeDriver20240819\\SafeDriver20240819\\AccountSafetySettings.xaml",
+              "RelativeDocumentMoniker": "AccountSafetySettings.xaml",
+              "ToolTip": "D:\\SafeDriver20240819\\SafeDriver20240819\\AccountSafetySettings.xaml",
+              "RelativeToolTip": "AccountSafetySettings.xaml",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAwwC0AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-26T03:56:47.28Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AccountSafetySettings.xaml.cs",
+              "DocumentMoniker": "D:\\SafeDriver20240819\\SafeDriver20240819\\AccountSafetySettings.xaml.cs",
+              "RelativeDocumentMoniker": "AccountSafetySettings.xaml.cs",
+              "ToolTip": "D:\\SafeDriver20240819\\SafeDriver20240819\\AccountSafetySettings.xaml.cs",
+              "RelativeToolTip": "AccountSafetySettings.xaml.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAIwBYAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T03:56:18.086Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "IdentificationSettings.xaml.cs",
-              "DocumentMoniker": "D:\\SafeDriver20240819\\SafeDriver20240819\\IdentificationSettings.xaml.cs",
-              "RelativeDocumentMoniker": "IdentificationSettings.xaml.cs",
-              "ToolTip": "D:\\SafeDriver20240819\\SafeDriver20240819\\IdentificationSettings.xaml.cs",
-              "RelativeToolTip": "IdentificationSettings.xaml.cs",
-              "ViewState": "AgIAAK4AAAAAAAAAAAAlwG4AAABIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T05:01:49.417Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TabPageNotification.xaml.cs",
-              "DocumentMoniker": "D:\\SafeDriver20240819\\SafeDriver20240819\\TabPageNotification.xaml.cs",
-              "RelativeDocumentMoniker": "TabPageNotification.xaml.cs",
-              "ToolTip": "D:\\SafeDriver20240819\\SafeDriver20240819\\TabPageNotification.xaml.cs",
-              "RelativeToolTip": "TabPageNotification.xaml.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAIA+wD0AAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T09:01:23.327Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "MainPage.xaml.cs",
               "DocumentMoniker": "D:\\SafeDriver20240819\\SafeDriver20240819\\MainPage.xaml.cs",
               "RelativeDocumentMoniker": "MainPage.xaml.cs",
-              "ToolTip": "D:\\SafeDriver20240819\\SafeDriver20240819\\MainPage.xaml.cs",
-              "RelativeToolTip": "MainPage.xaml.cs",
-              "ViewState": "AgIAAPkAAAAAAAAAAIA1wAMBAAAqAAAAAAAAAA==",
+              "ToolTip": "D:\\SafeDriver20240819\\SafeDriver20240819\\MainPage.xaml.cs*",
+              "RelativeToolTip": "MainPage.xaml.cs*",
+              "ViewState": "AgIAAIEBAAAAAAAAAAAkwIsBAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-25T10:41:37.575Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
+              "Title": "TabPageNotification.xaml.cs",
+              "DocumentMoniker": "D:\\SafeDriver20240819\\SafeDriver20240819\\TabPageNotification.xaml.cs",
+              "RelativeDocumentMoniker": "TabPageNotification.xaml.cs",
+              "ToolTip": "D:\\SafeDriver20240819\\SafeDriver20240819\\TabPageNotification.xaml.cs*",
+              "RelativeToolTip": "TabPageNotification.xaml.cs*",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAIwDUAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T09:01:23.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IdentificationSettings.xaml.cs",
+              "DocumentMoniker": "D:\\SafeDriver20240819\\SafeDriver20240819\\IdentificationSettings.xaml.cs",
+              "RelativeDocumentMoniker": "IdentificationSettings.xaml.cs",
+              "ToolTip": "D:\\SafeDriver20240819\\SafeDriver20240819\\IdentificationSettings.xaml.cs*",
+              "RelativeToolTip": "IdentificationSettings.xaml.cs*",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAUwGkAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T05:01:49.417Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TabPageDevice.xaml",
+              "DocumentMoniker": "D:\\SafeDriver20240819\\SafeDriver20240819\\TabPageDevice.xaml",
+              "RelativeDocumentMoniker": "TabPageDevice.xaml",
+              "ToolTip": "D:\\SafeDriver20240819\\SafeDriver20240819\\TabPageDevice.xaml",
+              "RelativeToolTip": "TabPageDevice.xaml",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAFYAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-26T04:01:57.627Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FrameSection.xaml",
+              "DocumentMoniker": "D:\\SafeDriver20240819\\SafeDriver20240819\\FrameSection.xaml",
+              "RelativeDocumentMoniker": "FrameSection.xaml",
+              "ToolTip": "D:\\SafeDriver20240819\\SafeDriver20240819\\FrameSection.xaml",
+              "RelativeToolTip": "FrameSection.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-26T04:01:06.968Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Settings.xaml.cs",
               "DocumentMoniker": "D:\\SafeDriver20240819\\SafeDriver20240819\\Settings.xaml.cs",
               "RelativeDocumentMoniker": "Settings.xaml.cs",
               "ToolTip": "D:\\SafeDriver20240819\\SafeDriver20240819\\Settings.xaml.cs",
               "RelativeToolTip": "Settings.xaml.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAA3wBQAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA1wBQAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-24T02:48:27.107Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "NotificationSettings.xaml.cs",
               "DocumentMoniker": "D:\\SafeDriver20240819\\SafeDriver20240819\\NotificationSettings.xaml.cs",
               "RelativeDocumentMoniker": "NotificationSettings.xaml.cs",
               "ToolTip": "D:\\SafeDriver20240819\\SafeDriver20240819\\NotificationSettings.xaml.cs",
               "RelativeToolTip": "NotificationSettings.xaml.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAYwBYAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA1wBYAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-23T13:02:16.494Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "TabPageProfiles.xaml.cs",
               "DocumentMoniker": "D:\\SafeDriver20240819\\SafeDriver20240819\\TabPageProfiles.xaml.cs",
               "RelativeDocumentMoniker": "TabPageProfiles.xaml.cs",
               "ToolTip": "D:\\SafeDriver20240819\\SafeDriver20240819\\TabPageProfiles.xaml.cs",
               "RelativeToolTip": "TabPageProfiles.xaml.cs",
-              "ViewState": "AgIAAJoAAAAAAAAAAAAuwJwAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAJoAAAAAAAAAAAA+wJwAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-25T11:01:16.096Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "IdentificationSettings.xaml",
               "DocumentMoniker": "D:\\SafeDriver20240819\\SafeDriver20240819\\IdentificationSettings.xaml",
               "RelativeDocumentMoniker": "IdentificationSettings.xaml",
               "ToolTip": "D:\\SafeDriver20240819\\SafeDriver20240819\\IdentificationSettings.xaml",
               "RelativeToolTip": "IdentificationSettings.xaml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-10-25T10:40:40.98Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "TabPageNotification.xaml",
               "DocumentMoniker": "D:\\SafeDriver20240819\\SafeDriver20240819\\TabPageNotification.xaml",
               "RelativeDocumentMoniker": "TabPageNotification.xaml",
               "ToolTip": "D:\\SafeDriver20240819\\SafeDriver20240819\\TabPageNotification.xaml",
               "RelativeToolTip": "TabPageNotification.xaml",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAIBJwCMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-10-25T09:01:22.118Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "PrivateSettings.xaml",
               "DocumentMoniker": "D:\\SafeDriver20240819\\SafeDriver20240819\\PrivateSettings.xaml",
               "RelativeDocumentMoniker": "PrivateSettings.xaml",
@@ -315,18 +383,17 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "Xamarin.Android.Tooling.targets",
               "DocumentMoniker": "C:\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\34.0.113\\tools\\Xamarin.Android.Tooling.targets",
               "ToolTip": "C:\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\34.0.113\\tools\\Xamarin.Android.Tooling.targets",
               "ViewState": "AgIAAFgAAAAAAAAAAAAswGMAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2024-10-23T15:47:27.44Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-23T15:47:27.44Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "NotificationSettings.xaml",
               "DocumentMoniker": "D:\\SafeDriver20240819\\SafeDriver20240819\\NotificationSettings.xaml",
               "RelativeDocumentMoniker": "NotificationSettings.xaml",

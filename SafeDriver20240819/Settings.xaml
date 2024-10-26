@@ -24,11 +24,11 @@
 
         <!-- 功能列表 -->
         <controls:FrameSection Title="辨識系統" Command="{Binding IdentificationCommand}" />
-        <controls:FrameSection Title="帳號安全" Command="{Binding AccountSafetyCommand}" />
         <controls:FrameSection Title="語言" Command="{Binding LanguageCommand}" />
         <controls:FrameSection Title="FAQ" Command="{Binding FAQCommand}" />
         <controls:FrameSection Title="意見回饋" Command="{Binding FeedbackCommand}" />
         <controls:FrameSection Title="聯絡我們" Command="{Binding ConnectionCommand}" />
+        <controls:FrameSection Title="伺服器設定" Command="{Binding AccountSafetyCommand}" />
 
     </VerticalStackLayout>
 </ContentPage>
